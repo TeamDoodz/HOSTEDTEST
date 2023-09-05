@@ -50,7 +50,7 @@ public sealed class SceneLoaderService {
 		}
 
 		CurrentSceneRoot = scene.Instantiate();
-		_sceneTree.Root.AddChild(CurrentSceneRoot);
 		InjectionUtilities.InjectPropertiesRecursive(CurrentSceneRoot, CurrentSceneServices);
+		_sceneTree.Root.CallDeferred(Godot.Node.MethodName.AddChild, CurrentSceneRoot);
 	}
 }
