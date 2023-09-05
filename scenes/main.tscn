@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cy5vii1dei14q"]
+
+[ext_resource type="Script" path="res://src/HostManager.cs" id="1_kr81p"]
+
+[node name="main" type="Node"]
+script = ExtResource("1_kr81p")
